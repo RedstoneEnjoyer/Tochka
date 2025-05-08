@@ -4,7 +4,7 @@ def check_capacity(max_capacity, guests):
     # список событий (кортежи из дат + count)
     events = []
     for guest in guests:
-        events.append((guest["check-in"], 1))   # заезд
+        events.append((guest["check-in"], 1))   # въезд
         events.append((guest["check-out"], -1)) # выезд
 
     # сортируем события по дате
