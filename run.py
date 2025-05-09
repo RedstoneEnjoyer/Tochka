@@ -1,6 +1,6 @@
 import json
 
-def check_capacity(max_capacity, guests):
+def check_capacity(int: max_capacity, dict: guests) -> bool:
     # список событий (кортежи из дат + count)
     events = []
     for guest in guests:
