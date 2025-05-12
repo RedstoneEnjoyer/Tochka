@@ -110,7 +110,6 @@ def solve(data):
         
         # обновляем данные
         count += steps
-        print(steps, key_pos)
         collected_keys.add(key)
         
         # обновляем позицию робота (в сетке)
@@ -119,7 +118,7 @@ def solve(data):
         x, y = key_pos
         data[x][y] = '@'  # постановка
         
-    return count, collected_keys
+    return count
 
 def main():
     data = get_input()
